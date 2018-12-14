@@ -24,12 +24,12 @@ import secrets
 
 import pandas as pd
 
-# import sys, os
-# stderr = sys.stderr
-# sys.stderr = open(os.devnull, 'w')
-# import tensorflow as tf
-# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
-# sys.stderr = stderr
+import sys, os
+stderr = sys.stderr
+sys.stderr = open(os.devnull, 'w')
+import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+sys.stderr = stderr
 
 """ <<<Game Begin>>> """
 
@@ -48,7 +48,7 @@ direction_order = Direction.get_all_cardinals() + [Direction.Still]
 training_data = []
 
 # Load model
-# model = tf.keras.models.load_model("models/phase1-4500-1544347061-2")
+model = tf.keras.models.load_model("models/phase2-6000-1544650113-15")
 logging.info("Loaded model")
 objectives = {}
 game.ready("MyPythonBot")
@@ -115,10 +115,11 @@ while True:
         surroundings_dict[ship.id] = surroundings
 
         if ship.halite_amount >= game_map[ship.position].halite_amount * constants.MOVE_COST_RATIO:
-            # prediction = model.predict(np.expand_dims(surroundings, axis=0))
-            # direction_choice = np.argmax(prediction)
+            prediction = model.predict(np.expand_dims(surroundings, axis=0))
+            direction_choice = np.argmax(prediction)
 
-            direction_choice = secrets.choice(range(len(direction_order)))
+            #
+            # _choice = secrets.choice(range(len(direction_order)))
         else:
             direction_choice = 4
 
@@ -128,17 +129,17 @@ while True:
         mission_control.loc[ship.id] = [ship.position, ship_destination, direction_choice]
 
     if not mission_control.empty:
-        while mission_control.destination.duplicated().any():
-            collisions = mission_control[mission_control.duplicated(subset=['destination'], keep=False)]
-
-            for c in collisions['destination'].unique():
-                moves = collisions[collisions['destination'] == c]
-                for idx, m in moves.iterrows():
-                    if m['move_id'] == 4:
-                        continue
-                    else:
-                        mission_control.loc[idx] = [m['location'], m['location'], 4]
-                        break
+        # while mission_control.destination.duplicated().any():
+        #     collisions = mission_control[mission_control.duplicated(subset=['destination'], keep=False)]
+        #
+        #     for c in collisions['destination'].unique():
+        #         moves = collisions[collisions['destination'] == c]
+        #         for idx, m in moves.iterrows():
+        #             if m['move_id'] == 4:
+        #                 continue
+        #             else:
+        #                 mission_control.loc[idx] = [m['location'], m['location'], 4]
+        #                 break
 
         for ship_id in mission_control.index:
             ship = me.get_ship(ship_id)

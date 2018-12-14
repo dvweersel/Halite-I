@@ -13,7 +13,7 @@ for f in all_files:
 
 print(len(halite_amounts))
 
-plt.hist(halite_amounts, bins=8)
+plt.hist(halite_amounts, bins=10)
 plt.show()
 
 print(np.mean(halite_amounts))

@@ -19,13 +19,13 @@ os.system('call activate halite')
 
 LOAD_TRAIN_FILES = False # True if we have already batch train files
 LOAD_PREV_MODEL = False
-HALITE_THRESHOLD = 4500
+HALITE_THRESHOLD = 6000
 
-TRAINING_CHUNK_SIZE = 1000
+TRAINING_CHUNK_SIZE = 500
 PREV_MODEL_NAME = ""
-VALIDATION_GAME_COUNT = 100
+VALIDATION_GAME_COUNT = 50
 
-NAME = f"phase1-{HALITE_THRESHOLD}-{int(time.time())}"
+NAME = f"phase2-{HALITE_THRESHOLD}-{int(time.time())}"
 EPOCHS = 20
 
 TRAINING_DATA_DIR = 'training_data'
@@ -94,7 +94,7 @@ print(f"After the threshold we have {len(training_file_names)} games.")
 
 random.shuffle(training_file_names)
 
-tensorboard = TensorBoard(log_dir=f"logs")
+tensorboard = TensorBoard(log_dir=f"logs/{NAME}")
 
 # os.system(f'tensorboard --logdir="logs" --host localhost --port 8088')
 
@@ -124,14 +124,17 @@ else:
     model = Sequential()
 
     model.add(Conv2D(64, (3, 3), padding="same", input_shape=X_test.shape[1:]))
+    model.add(BatchNormalization())
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), padding="same"))
 
     model.add(Conv2D(64, (3, 3), padding="same"))
+    model.add(BatchNormalization())
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), padding="same"))
 
     model.add(Conv2D(64, (3, 3), padding="same"))
+    model.add(BatchNormalization())
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), padding="same"))
 
