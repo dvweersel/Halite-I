@@ -12,7 +12,7 @@
       <excludeFolder url="file://$MODULE_DIR$/training_data_1" />
       <excludeFolder url="file://$MODULE_DIR$/training_data_2" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (Halite)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

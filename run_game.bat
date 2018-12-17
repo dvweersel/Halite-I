@@ -1,3 +1,1 @@
-call activate halite
-halite.exe --replay-directory replays/ -vvv --width 32 --height 32 --no-timeout --turn-limit 100 "python MyBot.py" "python MyBot.py"
-call deactivate
+halite.exe --replay-directory replays/ --no-timeout -vvv --width 32 --height 32 --turn-limit 100 "python MyBot.py" "python MyBot.py"

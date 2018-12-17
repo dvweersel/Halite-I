@@ -9,15 +9,9 @@ from hlt import constants
 # This library contains direction metadata to better interface with the game.
 from hlt.positionals import Direction, Position
 
-# This library allows you to generate random numbers.
-import random
-
 # Logging allows you to save messages for yourself. This is required because the regular STDOUT
 #   (print statements) are reserved for the engine-bot communication.
 import logging
-
-
-import os
 import numpy as np
 import time
 import secrets
@@ -28,9 +22,20 @@ import sys, os
 stderr = sys.stderr
 sys.stderr = open(os.devnull, 'w')
 import tensorflow as tf
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 sys.stderr = stderr
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+# Load model
+# model = tf.keras.models.load_model("models/phase2-6700-1544889972-4")
+model = tf.keras.models.load_model("models/phase2-6700-1544992564-4")
+RANDOM_CHANCE = secrets.choice([0.15, 0.25, 0.35])
+
+SAVE_THRESHOLD = 6000
+TOTAL_TURNS = 100
+MAX_SHIPS = 10
+SIGHT_DISTANCE = 16
 """ <<<Game Begin>>> """
 
 # This game object contains the initial game state.
@@ -38,18 +43,12 @@ game = hlt.Game()
 # At this point "game" variable is populated with initial map data.
 # This is a good place to do computationally expensive start-up pre-processing.
 # As soon as you call "ready" function below, the 2 second per turn timer will start.
-SAVE_THRESHOLD = 5500
-TOTAL_TURNS = 100
-MAX_SHIPS = 10
-SIGHT_DISTANCE = 16
-
 direction_order = Direction.get_all_cardinals() + [Direction.Still]
-
 training_data = []
 
-# Load model
-model = tf.keras.models.load_model("models/phase2-6000-1544650113-15")
 logging.info("Loaded model")
+# model.predict(np.ones((1,33,33,3)))
+
 objectives = {}
 game.ready("MyPythonBot")
 
@@ -115,11 +114,12 @@ while True:
         surroundings_dict[ship.id] = surroundings
 
         if ship.halite_amount >= game_map[ship.position].halite_amount * constants.MOVE_COST_RATIO:
-            prediction = model.predict(np.expand_dims(surroundings, axis=0))
-            direction_choice = np.argmax(prediction)
-
-            #
-            # _choice = secrets.choice(range(len(direction_order)))
+            if secrets.choice(range(int(1/RANDOM_CHANCE))) == 1:
+                direction_choice = secrets.choice(range(len(direction_order)))
+            else:
+                prediction = model.predict([np.array(surroundings).reshape(-1, len(surroundings), len(surroundings), 3)])[0]
+                direction_choice = np.argmax(prediction)
+                logging.info(f"prediction: {direction_order[direction_choice]}")
         else:
             direction_choice = 4
 
@@ -129,17 +129,17 @@ while True:
         mission_control.loc[ship.id] = [ship.position, ship_destination, direction_choice]
 
     if not mission_control.empty:
-        # while mission_control.destination.duplicated().any():
-        #     collisions = mission_control[mission_control.duplicated(subset=['destination'], keep=False)]
-        #
-        #     for c in collisions['destination'].unique():
-        #         moves = collisions[collisions['destination'] == c]
-        #         for idx, m in moves.iterrows():
-        #             if m['move_id'] == 4:
-        #                 continue
-        #             else:
-        #                 mission_control.loc[idx] = [m['location'], m['location'], 4]
-        #                 break
+        while mission_control.destination.duplicated().any():
+            collisions = mission_control[mission_control.duplicated(subset=['destination'], keep=False)]
+
+            for c in collisions['destination'].unique():
+                moves = collisions[collisions['destination'] == c]
+                for idx, m in moves.iterrows():
+                    if m['move_id'] == 4:
+                        continue
+                    else:
+                        mission_control.loc[idx] = [m['location'], m['location'], 4]
+                        break
 
         for ship_id in mission_control.index:
             ship = me.get_ship(ship_id)
@@ -147,14 +147,8 @@ while True:
 
             training_data.append([surroundings_dict[ship_id], choice])
             command_queue.append(ship.move(direction_order[choice]))
-            
-            logging.info(ship)
-            logging.info(f"Moving ship into {mission_control.loc[ship_id]['destination']}")
 
     if len(me.get_ships()) < MAX_SHIPS:
-        # logging.info(f"Shipyard position: {me.shipyard.position}")
-        # logging.info(f"Destination: {mission_control['destination']}")
-        # logging.info(f"Blocked: {(mission_control['destination'] == me.shipyard.position).any()}")
         if me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied \
                 and not (mission_control['destination'] == me.shipyard.position).any():
             command_queue.append(me.shipyard.spawn())

@@ -18,15 +18,15 @@ import pickle
 os.system('call activate halite')
 
 LOAD_TRAIN_FILES = False # True if we have already batch train files
-LOAD_PREV_MODEL = False
-HALITE_THRESHOLD = 6000
+LOAD_PREV_MODEL = True
+HALITE_THRESHOLD = 6700
 
-TRAINING_CHUNK_SIZE = 500
-PREV_MODEL_NAME = ""
-VALIDATION_GAME_COUNT = 50
+TRAINING_CHUNK_SIZE = 200
+PREV_MODEL_NAME = "models/phase2-6000-1544855628-4"
+VALIDATION_GAME_COUNT = 20
 
 NAME = f"phase2-{HALITE_THRESHOLD}-{int(time.time())}"
-EPOCHS = 20
+EPOCHS = 5
 
 TRAINING_DATA_DIR = 'training_data'
 
@@ -124,17 +124,14 @@ else:
     model = Sequential()
 
     model.add(Conv2D(64, (3, 3), padding="same", input_shape=X_test.shape[1:]))
-    model.add(BatchNormalization())
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), padding="same"))
 
     model.add(Conv2D(64, (3, 3), padding="same"))
-    model.add(BatchNormalization())
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), padding="same"))
 
     model.add(Conv2D(64, (3, 3), padding="same"))
-    model.add(BatchNormalization())
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2), padding="same"))
 
