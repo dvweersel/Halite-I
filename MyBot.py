@@ -15,7 +15,6 @@ import logging
 import numpy as np
 import time
 import secrets
-
 import pandas as pd
 
 import sys, os
@@ -27,15 +26,16 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
 sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-# Load model
 # model = tf.keras.models.load_model("models/phase2-6700-1544889972-4")
-model = tf.keras.models.load_model("models/phase2-6700-1544992564-4")
+model = tf.keras.models.load_model("models/phase2-6700-1544992564/phase2-6700-1544992564-4")
 RANDOM_CHANCE = secrets.choice([0.15, 0.25, 0.35])
 
-SAVE_THRESHOLD = 6000
-TOTAL_TURNS = 100
-MAX_SHIPS = 10
 SIGHT_DISTANCE = 16
+
+TOTAL_TURNS = 100
+MAX_SHIPS = 1
+RETURN_VALUE = 500
+
 """ <<<Game Begin>>> """
 
 # This game object contains the initial game state.
@@ -45,6 +45,8 @@ game = hlt.Game()
 # As soon as you call "ready" function below, the 2 second per turn timer will start.
 direction_order = Direction.get_all_cardinals() + [Direction.Still]
 training_data = []
+
+distance_map, initial_halite = game.game_map.return_map([game.me.shipyard.position])
 
 logging.info("Loaded model")
 # model.predict(np.ones((1,33,33,3)))
@@ -58,27 +60,38 @@ while True:
     me = game.me
     game_map = game.game_map
 
+    # Data structures for making, storing and sending moves
     mission_control = pd.DataFrame(columns=['location', 'destination', 'move_id'])
-
+    command_queue = []
     surroundings_dict = {}
 
-    # Command queu to send moves
-    command_queue = []
-
+    # Features
     dropoff_positions = [d.position for d in me.get_dropoffs() + [me.shipyard]]
     ship_positions = [s.position for s in me.get_ships()]
-
     total_ships = me.get_ship_amount()
+
+    distance_map, avg_halite = game_map.return_map(dropoff_positions)
 
     for ship in me.get_ships():
 
         logging.info(ship)
+
+        ship_id = ship.id
+        # Determining objectives
+        if ship.halite_amount > RETURN_VALUE:
+            if ship.position == me.shipyard.position:
+                objectives[ship_id] = 'm'
+            else:
+                objectives[ship_id] = 'r'
+        else:
+            objectives[ship_id] = 'm'
+
         size = SIGHT_DISTANCE
         surroundings = []
         for y in range(-1*size, size+1):
             row = []
             for x in range(-1*size, size+1):
-                current_cell = game_map[ship.position + Position(x,y)]
+                current_cell = game_map[ship.position + Position(x, y)]
 
                 if current_cell.position in dropoff_positions:
                     drop_friend_foe = 1
@@ -113,15 +126,21 @@ while True:
 
         surroundings_dict[ship.id] = surroundings
 
-        if ship.halite_amount >= game_map[ship.position].halite_amount * constants.MOVE_COST_RATIO:
-            if secrets.choice(range(int(1/RANDOM_CHANCE))) == 1:
-                direction_choice = secrets.choice(range(len(direction_order)))
+        if objectives[ship_id] == 'r':
+            logging.info("Returning")
+            direction_choice = game_map.navigate_back(ship, distance_map)
+        elif objectives[ship_id] == 'm':
+            logging.info("Mining")
+            if ship.halite_amount >= game_map[ship.position].halite_amount * constants.MOVE_COST_RATIO:
+                if secrets.choice(range(int(1/RANDOM_CHANCE))) == 1:
+                    direction_choice = secrets.choice(range(len(direction_order)))
+                else:
+                    prediction = model.predict([np.array(surroundings).reshape(-1, len(surroundings),
+                                                                               len(surroundings), 3)])[0]
+                    direction_choice = np.argmax(prediction)
+                    logging.info(f"prediction: {direction_order[direction_choice]}")
             else:
-                prediction = model.predict([np.array(surroundings).reshape(-1, len(surroundings), len(surroundings), 3)])[0]
-                direction_choice = np.argmax(prediction)
-                logging.info(f"prediction: {direction_order[direction_choice]}")
-        else:
-            direction_choice = 4
+                direction_choice = 4
 
         ship_destination = game_map.normalize(ship.position.directional_offset(direction_order[direction_choice]))
 
@@ -154,11 +173,8 @@ while True:
             command_queue.append(me.shipyard.spawn())
 
     if game.turn_number == TOTAL_TURNS:
-        halite_amount = total_ships*1000 + me.halite_amount
-        if halite_amount >= SAVE_THRESHOLD:
-            logging.info("Saving training data")
-            np.save(f"training_data/{halite_amount}-{total_ships}-{int(time.time()*1000)}.npy", training_data)
+        logging.info("Saving training data")
+        np.save(f"training_data/temp/{me.halite_amount}-{total_ships}-{int(time.time()*1000)}.npy", training_data)
 
     # Send your moves back to the game environment, ending this turn.
     game.end_turn(command_queue)
-

@@ -108,6 +108,10 @@ class Position:
     def __ne__(self, other):
         return not self.__eq__(other)
 
+    # TODO: Make implementation more meaningful
+    def __lt__(self, other):
+        return False
+
     def __repr__(self):
         return "{}({}, {})".format(self.__class__.__name__,
                                    self.x,

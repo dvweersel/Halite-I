@@ -184,6 +184,6 @@ for e in range(EPOCHS):
 
         model.fit(X, y, batch_size=32, epochs=1, validation_data=(X_test, y_test), callbacks=[tensorboard])
 
-    model.save(f"models/{NAME}-{e}")
+    model.save(f"models/{NAME}/{NAME}-{e}")
 
 os.system(f'tensorboard --logdir="./logs/{NAME}" --host localhost --port 8088')

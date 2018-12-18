@@ -6,6 +6,7 @@ from .player import Player
 from .positionals import Direction, Position
 from .common import read_input
 
+from heapq import *
 
 class MapCell:
     """A cell on the game map."""
@@ -110,6 +111,54 @@ class GameMap:
         :return: A normalized position object fitting within the bounds of the map
         """
         return Position(position.x % self.width, position.y % self.height)
+
+    def return_map(self, base):
+        """
+        Creates a dijkstra map containing cost of returning to the shipyard
+        :return: The shipyard:
+        """
+        normalize = self.normalize
+
+        q, cost_map = [], {}
+
+        avg_halite = 0
+        for b in base:
+            heappush(q, (0, b))
+
+        while q:
+            (cost, position) = heappop(q)
+
+            if position in cost_map:
+                continue
+
+            avg_halite += self[position].halite_amount
+
+            cost_map[position] = cost
+
+            for neighbour in position.get_surrounding_cardinals():
+                neighbour = normalize(neighbour)
+                new_cost = cost + self[neighbour].halite_amount/10 + 50
+                heappush(q, (new_cost, neighbour))
+
+        avg_halite = avg_halite / (self.width * self.height)
+
+        return cost_map, avg_halite
+
+    def navigate_back(self, ship, dijkstra_map):
+        """
+        Returns a direction following the dijkstra_map
+        :return: The direction:
+        """
+        cost = dijkstra_map[ship.position]
+        move_dir = 4
+
+        for choice, direction in enumerate(Direction.get_all_cardinals()):
+            target_pos = self.normalize(ship.position.directional_offset(direction))
+            if dijkstra_map[target_pos] < cost:
+                cost = dijkstra_map[target_pos]
+                move_dir = choice
+
+        return move_dir
 
     @staticmethod
     def _get_target_direction(source, target):
