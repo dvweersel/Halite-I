@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3240c531-ad44-49fb-b048-3e865a53421a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyBot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hlt/game_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/hlt/game_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hlt/positionals.py" beforeDir="false" afterPath="$PROJECT_DIR$/hlt/positionals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855-0" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855-1" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855-2" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855-3" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855-4" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628-0" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628-1" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628-2" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628-3" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628-4" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564-0" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564-1" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564-2" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564-3" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564-4" beforeDir="false" afterPath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing_grounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing_grounds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-    </list>
+    <list default="true" id="3240c531-ad44-49fb-b048-3e865a53421a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="459">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -418,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="459">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
