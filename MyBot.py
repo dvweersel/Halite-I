@@ -27,7 +27,10 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
 sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 # model = tf.keras.models.load_model("models/phase2-6700-1544889972-4")
-model = tf.keras.models.load_model("models/phase2-6700-1544992564/phase2-6700-1544992564-4")
+MODEL_NAME = 'phase2-7000-1545066729'
+MODEL_EPOCH = 4
+
+model = tf.keras.models.load_model(f"models/{MODEL_NAME}/{MODEL_NAME}-{MODEL_EPOCH}")
 RANDOM_CHANCE = secrets.choice([0.15, 0.25, 0.35])
 
 SIGHT_DISTANCE = 16
