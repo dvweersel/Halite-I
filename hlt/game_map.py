@@ -121,7 +121,7 @@ class GameMap:
 
         q, cost_map = [], {}
 
-        avg_halite = 0
+        total_halite = 0
         for b in base:
             heappush(q, (0, b))
 
@@ -131,7 +131,7 @@ class GameMap:
             if position in cost_map:
                 continue
 
-            avg_halite += self[position].halite_amount
+            total_halite += self[position].halite_amount
 
             cost_map[position] = cost
 
@@ -140,9 +140,9 @@ class GameMap:
                 new_cost = cost + self[neighbour].halite_amount/10 + 50
                 heappush(q, (new_cost, neighbour))
 
-        avg_halite = avg_halite / (self.width * self.height)
+        # total_halite = total_halite / (self.width * self.height)
 
-        return cost_map, avg_halite
+        return cost_map, total_halite
 
     def navigate_back(self, ship, dijkstra_map):
         """

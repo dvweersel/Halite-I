@@ -1,5 +1,6 @@
-MyBot
 Makefile
+*.idea
+*.ipynb_checkpoints
 *.hlt
 *.log
 *~

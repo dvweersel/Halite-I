@@ -26,17 +26,17 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
 sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-# model = tf.keras.models.load_model("models/phase2-6700-1544889972-4")
-MODEL_NAME = 'phase2-7000-1545066729'
-MODEL_EPOCH = 4
+MODEL_NAME = 'gen1-0.03-1545999103'
+MODEL_EPOCH = 99
 
 model = tf.keras.models.load_model(f"models/{MODEL_NAME}/{MODEL_NAME}-{MODEL_EPOCH}")
 RANDOM_CHANCE = secrets.choice([0.15, 0.25, 0.35])
 
 SIGHT_DISTANCE = 16
+SAVE_THRESHOLD = 0
 
 TOTAL_TURNS = 100
-MAX_SHIPS = 1
+MAX_SHIPS = 99
 RETURN_VALUE = 500
 
 """ <<<Game Begin>>> """
@@ -46,10 +46,13 @@ game = hlt.Game()
 # At this point "game" variable is populated with initial map data.
 # This is a good place to do computationally expensive start-up pre-processing.
 # As soon as you call "ready" function below, the 2 second per turn timer will start.
+players = game.players
+
 direction_order = Direction.get_all_cardinals() + [Direction.Still]
 training_data = []
 
 distance_map, initial_halite = game.game_map.return_map([game.me.shipyard.position])
+logging.info(initial_halite)
 
 logging.info("Loaded model")
 # model.predict(np.ones((1,33,33,3)))
@@ -176,8 +179,11 @@ while True:
             command_queue.append(me.shipyard.spawn())
 
     if game.turn_number == TOTAL_TURNS:
-        logging.info("Saving training data")
-        np.save(f"training_data/temp/{me.halite_amount}-{total_ships}-{int(time.time()*1000)}.npy", training_data)
+        avg_halite =  np.around(initial_halite/(game_map.width*game_map.height), 4)
+        pct_gathered = np.around((me.halite_amount + (total_ships * constants.SHIP_COST))/initial_halite, 5)
+        if pct_gathered >= SAVE_THRESHOLD:
+            logging.info("Saving training data")
+            np.save(f"training_data/{avg_halite}-{len(players)}-{pct_gathered}-{total_ships}-{int(time.time()*1000)}.npy", training_data)
 
     # Send your moves back to the game environment, ending this turn.
     game.end_turn(command_queue)

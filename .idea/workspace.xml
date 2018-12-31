@@ -5,8 +5,131 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyBot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generate_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hlt/game_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/hlt/game_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854035.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854277.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854391.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854414.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854454.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854496.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854512.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854543.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854579.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854597.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854634.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854671.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854699.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854732.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6000-1544853855/events.out.tfevents.1544854776.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544995456.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544995615.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544995770.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544995929.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996029.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996056.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996092.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996119.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996147.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996175.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996190.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996222.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544996257.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998055.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998091.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998115.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998155.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998184.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998219.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998250.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998274.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998311.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998349.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998389.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-6700-1544992564/events.out.tfevents.1544998419.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066225/events.out.tfevents.1545066483.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545066855.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545067053.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545067258.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545067451.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545067649.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545067829.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068016.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068204.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068400.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068595.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068793.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068871.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545068893.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070623.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070677.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070731.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070786.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070849.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070908.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545070972.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545071032.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545071284.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545071326.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545071372.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072025.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072076.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072136.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072197.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072267.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072333.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072386.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072433.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072487.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072539.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072584.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072634.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072654.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072703.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072757.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072811.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072868.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072922.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545072980.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073051.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073132.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073198.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073266.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073321.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073344.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073401.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073460.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073520.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073575.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073632.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073680.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073731.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073779.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073830.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073880.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/phase2-7000-1545066729/events.out.tfevents.1545073920.DESKTOP-C749P6I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544853855/phase2-6000-1544853855-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6000-1544855628/phase2-6000-1544855628-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-6700-1544992564/phase2-6700-1544992564-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-7000-1545066729/phase2-7000-1545066729-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-7000-1545066729/phase2-7000-1545066729-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-7000-1545066729/phase2-7000-1545066729-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-7000-1545066729/phase2-7000-1545066729-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/phase2-7000-1545066729/phase2-7000-1545066729-4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run_game.bat" beforeDir="false" afterPath="$PROJECT_DIR$/run_game.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing_grounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing_grounds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_data_distribution.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,36 +141,41 @@
     <session id="-1293818517">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="1" />
-          <entry key="py" value="6" />
+          <entry key="log" value="1" />
+          <entry key="png" value="2" />
+          <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
-          <entry key="Python" value="6" />
+          <entry key="Image" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="bat" value="40" />
           <entry key="dummy" value="2" />
-          <entry key="py" value="391" />
+          <entry key="py" value="771" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bat" value="40" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="391" />
+          <entry key="Python" value="771" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -55,23 +183,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generate_data.py">
+        <entry file="file://$PROJECT_DIR$/MyBot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="346">
+              <caret line="169" column="32" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1545177252286" expanded="true" signature="204:1010" ph="..." />
+                <element signature="e#92#102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyBot.py">
+        <entry file="file://$PROJECT_DIR$/training_data_distribution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="138" column="31" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2312">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hlt/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hlt/game_map.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2278">
+              <caret line="142" column="23" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -87,12 +244,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dropoffs</find>
       <find>VALIDATION_GAME_COUNT</find>
       <find>secrets</find>
       <find>test_x</find>
       <find>X.append</find>
-      <find>X_test</find>
       <find>append</find>
       <find>X</find>
       <find>validation_split</find>
@@ -106,9 +261,19 @@
       <find>logs</find>
       <find>/logs</find>
       <find>save</find>
-      <find>HALITE_THRESHOLD</find>
       <find>logging</find>
       <find>temp</find>
+      <find>models</find>
+      <find>NAME</find>
+      <find>seed</find>
+      <find>initial_</find>
+      <find>TRAINING_DATA_DIRTRAINING_CHUNK_SIZE</find>
+      <find>TRAINING_CHUNK_SIZE</find>
+      <find>int(</find>
+      <find>HALITE_THRESHOLD</find>
+      <find>shortest file</find>
+      <find>balance</find>
+      <find>X_test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,18 +288,18 @@
         <option value="$PROJECT_DIR$/hlt/player.py" />
         <option value="$PROJECT_DIR$/hlt/entity.py" />
         <option value="$PROJECT_DIR$/bot-0.log" />
-        <option value="$PROJECT_DIR$/training_data_distribution.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/hlt/positionals.py" />
-        <option value="$PROJECT_DIR$/hlt/game_map.py" />
         <option value="$PROJECT_DIR$/run_game.bat" />
-        <option value="$PROJECT_DIR$/MyBot.py" />
         <option value="$PROJECT_DIR$/testing_grounds.py" />
         <option value="$PROJECT_DIR$/generate_data_2.py" />
         <option value="$PROJECT_DIR$/generate_data_3.py" />
         <option value="$PROJECT_DIR$/generate_data_1.py" />
+        <option value="$PROJECT_DIR$/hlt/game_map.py" />
         <option value="$PROJECT_DIR$/generate_data.py" />
+        <option value="$PROJECT_DIR$/training_data_distribution.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/MyBot.py" />
       </list>
     </option>
   </component>
@@ -157,6 +322,11 @@
               <item name="Halite-ML" type="b2602c69:ProjectViewProjectNode" />
               <item name="Halite-ML" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Halite-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Halite-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -169,16 +339,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\Documents\Halite-ML" />
+      <recent name="C:\Users\M63G651\Halite-ML" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\Documents\Halite-ML\report" />
       <recent name="D:\Users\Administrator\Documents\Halite-ML\models\phase2-7000-1545066729" />
       <recent name="C:\Users\M63G651\Halite-ML\models\phase2-6700-1544992564" />
       <recent name="C:\Users\M63G651\Halite-ML\models\phase2-6000-1544855628" />
       <recent name="C:\Users\M63G651\Halite-ML\models\phase2-6000-1544853855" />
-      <recent name="C:\Users\M63G651\Halite-ML\reports" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Users\Administrator\Documents\Halite-ML" />
-      <recent name="C:\Users\M63G651\Halite-ML" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -246,7 +416,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17281349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -257,7 +427,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32848233" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.1985447" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.26923078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3960499" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -272,73 +442,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-111003+0100-1544609399-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-112503+0100-1544610300-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-112503+0100-1544610300-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-112556+0100-1544610352-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-112556+0100-1544610352-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-113527+0100-1544610912-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-141826+0100-1544620703-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-141826+0100-1544620703-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-141942+0100-1544620778-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-141942+0100-1544620778-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-142025+0100-1544620821-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-142025+0100-1544620821-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-142229+0100-1544620944-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-142229+0100-1544620944-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143117+0100-1544621473-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143117+0100-1544621473-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143200+0100-1544621517-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143200+0100-1544621517-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143448+0100-1544621685-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143504+0100-1544621701-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143504+0100-1544621701-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181212-143558+0100-1544621755-32-32-1.log" />
     <entry file="file://$PROJECT_DIR$/bot-3.log" />
-    <entry file="file://$PROJECT_DIR$/training_data_distribution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bot-1.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-112023+0100-1544869218-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-112023+0100-1544869218-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-120245+0100-1544871735-48-48-3.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-120245+0100-1544871735-48-48-2.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-120341+0100-1544871815-48-48-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-120341+0100-1544871815-48-48-2.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-121255+0100-1544872345-32-32-0.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-121255+0100-1544872345-32-32-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-121616+0100-1544872546-56-56-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-123652+0100-1544873782-56-56-2.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-125738+0100-1544875049-56-56-1.log" />
-    <entry file="file://$PROJECT_DIR$/replays/errorlog-20181215-172023+0100-1544890817-32-32-1.log" />
     <entry file="file://$PROJECT_DIR$/../AppData/Local/conda/conda/envs/halite/Lib/site-packages/tensorflow/python/keras/engine/saving.py" />
-    <entry file="file://$PROJECT_DIR$/bot-0.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hlt/positionals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hlt/game_map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_2_distribution.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -346,13 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -379,21 +480,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBot.py">
+    <entry file="file://$PROJECT_DIR$/hlt/common.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlt/commands.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlt/positionals.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="138" column="31" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
+        <state relative-caret-position="144">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlt/player.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlt/networking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot-0.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="294">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/gen0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="169" column="32" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1545177252286" expanded="true" signature="204:1010" ph="..." />
+            <element signature="e#92#102#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training_data_distribution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlt/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlt/game_map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="142" column="23" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="23" />
         </state>
       </provider>
     </entry>

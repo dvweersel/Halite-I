@@ -22,22 +22,22 @@ while True:
     for i in range(N):
         subprocess.run(f'activate halite && {command} && deactivate', shell=True)
 
-    games = os.listdir(FOLDER)
-    sorted(games, key=lambda x: int(x.split("-")[0]))
+    # games = os.listdir(FOLDER)
+    # sorted(games, key=lambda x: int(x.split("-")[0]))
+    #
+    # print(f"Picking top {math.floor(len(games)/3)} games")
+    # print(games[-math.floor(len(games)/3):])
+    # for w in games[-math.floor(len(games)/3):]:
+    #     file_path = os.path.join(FOLDER, w)
+    #     game = np.load(file_path)
+    #     halite_amount = int(w.split("-")[0])
+    #     np.save(f"training_data/{w}", game)
 
-    print(f"Picking top {math.floor(len(games)/3)} games")
-    print(games[-math.floor(len(games)/3):])
-    for w in games[-math.floor(len(games)/3):]:
-        file_path = os.path.join(FOLDER, w)
-        game = np.load(file_path)
-        halite_amount = int(w.split("-")[0])
-        np.save(f"training_data/{w}", game)
-
-    for the_file in os.listdir(FOLDER):
-        file_path = os.path.join(FOLDER, the_file)
-        try:
-            if os.path.isfile(file_path):
-                os.unlink(file_path)
-            # elif os.path.isdir(file_path): shutil.rmtree(file_path)
-        except Exception as e:
-            print(e)
+    # for the_file in os.listdir(FOLDER):
+    #     file_path = os.path.join(FOLDER, the_file)
+    #     try:
+    #         if os.path.isfile(file_path):
+    #             os.unlink(file_path)
+    #         # elif os.path.isdir(file_path): shutil.rmtree(file_path)
+    #     except Exception as e:
+    #         print(e)
