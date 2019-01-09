@@ -5,6 +5,8 @@ import time
 import random
 from tqdm import tqdm
 
+import pandas as pd
+
 import math
 
 from tensorflow.keras.models import Sequential
@@ -18,8 +20,8 @@ import pickle
 os.system('call activate halite')
 
 LOAD_TRAIN_FILES = False # True if we have already batch train files
-LOAD_PREV_MODEL = True
-HALITE_THRESHOLD = 0.03
+LOAD_PREV_MODEL = False
+HALITE_THRESHOLD = 0.0187
 
 TRAINING_CHUNK_SIZE = 200
 PREV_MODEL_NAME = 'gen1-0.035-1545678705'
@@ -39,7 +41,7 @@ def createFolder(directory):
 	except OSError:
 		print ('Error: Creating directory. ' +  directory)
 
-def cleanupFolder(directory)
+def cleanupFolder(directory):
 	for the_file in os.listdir(directory):
 		file_path = os.path.join(folder, the_file)
 		try:
@@ -52,7 +54,6 @@ def chunks(l, n):
 	"""Yield successive n-sized chunks from l."""
 	for i in range(0, len(l), n):
 		yield l[i:i + n]
-
 
 def balance(x, y):
 	_0 = []
@@ -102,11 +103,26 @@ def balance(x, y):
 
 training_file_names = []
 
+rows = []
 for f in os.listdir(TRAINING_DATA_DIR):
-	halite_amount = float(f.split("-")[2])
+	avg_halite = float(f.split("-")[0])
+	players = int(f.split("-")[1])
+	gathered = float(f.split("-")[2])
+	file = f
 
-	if halite_amount >= HALITE_THRESHOLD:
-		training_file_names.append(os.path.join(TRAINING_DATA_DIR, f))
+	row = {'avg_halite' : avg_halite,
+		'players' : players,
+		'gathered': gathered,
+		'file' : f}
+
+	rows.append(row)
+
+df = pd.DataFrame(rows, columns=['avg_halite', 'players', 'gathered', 'file'])
+
+games = df.sort_values('gathered', ascending=False).groupby('avg_halite', sort=False).head(5)
+
+for f in games.values:
+	training_file_names.append(os.path.join(TRAINING_DATA_DIR, f[3]))
 
 print(f"After the threshold we have {len(training_file_names)}/{len(os.listdir(TRAINING_DATA_DIR))} games.")
 
@@ -214,5 +230,5 @@ for e in range(EPOCHS):
 
 # os.system(f'tensorboard --logdir="./logs/{NAME}" --host localhost --port 8088')
 print('Cleanup files')
-cleanupFolder(train_files)
-cleanupFolder(replays)
+cleanupFolder('train_files')
+cleanupFolder('replays')

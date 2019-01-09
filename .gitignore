@@ -1,6 +1,6 @@
 Makefile
-*.idea
 *.ipynb_checkpoints
+*.idea
 *.hlt
 *.log
 *~

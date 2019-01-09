@@ -21,13 +21,12 @@ import sys, os
 stderr = sys.stderr
 sys.stderr = open(os.devnull, 'w')
 import tensorflow as tf
-sys.stderr = stderr
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
 sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-MODEL_NAME = 'gen1-0.03-1545999103'
-MODEL_EPOCH = 99
+MODEL_NAME = 'gen1-0.0187-1546962535'
+MODEL_EPOCH = 49
 
 model = tf.keras.models.load_model(f"models/{MODEL_NAME}/{MODEL_NAME}-{MODEL_EPOCH}")
 RANDOM_CHANCE = secrets.choice([0.15, 0.25, 0.35])
@@ -37,7 +36,7 @@ SAVE_THRESHOLD = 0
 
 TOTAL_TURNS = 100
 MAX_SHIPS = 99
-RETURN_VALUE = 500
+RETURN_VALUE = 900
 
 """ <<<Game Begin>>> """
 
@@ -170,7 +169,10 @@ while True:
             ship = me.get_ship(ship_id)
             choice = mission_control.at[ship_id, 'move_id']
 
-            training_data.append([surroundings_dict[ship_id], choice])
+            # Only store relevant moves
+            if objectives[ship_id] == 'm':
+            	training_data.append([surroundings_dict[ship_id], choice])
+
             command_queue.append(ship.move(direction_order[choice]))
 
     if len(me.get_ships()) < MAX_SHIPS:
